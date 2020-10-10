@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+#redeem{
+    height: 100vh;
+    width: 100vw;
+    background-color: #f7a18a;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo{
+    margin-top: 5vh;
+    margin-bottom:5vh;
+   width: 80vw;
+}
+
+.redeemContent div{
+    margin-bottom: 5vh;
+}
+
+.redeemText{
+	width: 70vw;
+	text-align: left;
+	margin: auto;
+}
+
+
+
+.field-name,
+.field-phone{
+    background: #FFF7ED;
+    margin: auto;
+	height: 50px;
+	width: 70vw;
+	display: flex;
+	justify-content: space-between;
+	/* align-items: center; */
+	border-radius: 10px;
+	transition: all 0.5s ease;
+}
+
+.field-name i, 
+.field-phone i{
+
+	padding: 20px;
+	cursor: pointer;
+}
+
+.field-name input, 
+.field-phone input{
+
+	background: none;
+	border: none;
+	outline: none;
+	height: 100%;
+	flex: 1;
+
+}
+
+#voucher{
+    height: 100vh;
+    width: 100vw;
+    background-color: #333;
+    display: none;
+}
+
+#hideBtn{
+    padding: 5px;
+    border: 3px solid aqua;
+    border-radius: 10px;
+}
+
+@keyframes shake{
+	0%{
+		transform: translate(-50%,-50%) rotate(0deg);
+	}
+	50%{
+		transform: translate(-50%,-50%) rotate(5deg);
+	}
+	100%{
+		transform: translate(-50%,-50%) rotate(0deg);
+	}
+}
