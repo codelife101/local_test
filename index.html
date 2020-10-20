@@ -6,6 +6,8 @@
     <title>Local Voucher</title>
     <script src="https://kit.fontawesome.com/5a8c51c16a.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,24 +28,42 @@
 
         
             <form>
-                <div class="field-name ">
-                    <i class="fas fa-user"></i>
-                    <input type="text" placeholder="user name" required />
+                <div class="formInputs">
+                    <label for="fname">My name is</label>
+                    <br /><br />
+                    <input class="nameInput" type="text" id="fname" name="firstname" placeholder="Your name..">
                 </div>
+
+                <div class="formInputs">
+                    <label for="fname">Contact me</label>
+                    <br /><br />
+                    <input class="nameInput" type="text" id="fname" name="firstname" placeholder="Your number">
+                </div>
+
+                <input onclick="remove()" id="hideBtn" class="submitBtn" type="submit" value="Redeem">
                 
-                <div class="field-phone">
-                    <i class="fas fa-phone"></i>
-                    <input type="email" placeholder="email account" required />
-                </div>
             </form>
         
-
-            <button id="hideBtn">redeem</button>
+            
+            
         </div>
         
     </div>
 
-    <div id="voucher"></div>
+    <div id="voucher">
+        <img class="logo" src="images/logovoucher.svg" />
+        <div>
+            <h1 class="headings">LOCAL</h1>
+        </div>
+        <img class="voucherImg" src="images/index.svg" />
+        <div class="voucherText">
+            <p>Thanks for supporting local
+                This ones for you. <br /> <br />
+                Half price dount with any cup of
+                coffee, hot choc or tea purchase.</p>
+        </div>
+        <img class="logoIcon" src="images/SmallLogoMark.svg" />
+    </div>
 
 
 
